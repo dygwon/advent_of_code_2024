@@ -39,4 +39,6 @@ int main() {
     // Part one answer: 181345830
     // cout << "Part one: " << part_one << endl;
     cout << "Part two: " << part_two << endl;
+
+    return 0;
 }
