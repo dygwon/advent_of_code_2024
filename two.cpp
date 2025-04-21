@@ -58,6 +58,32 @@ int main() {
                     break;
                 }
             }
+
+            /*
+            Potential non-brute force approach
+            https://www.reddit.com/r/adventofcode/comments/1h4ncyr/comment/m1rp331/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
+            Part 2 - NO BRUTE FORCE
+
+            Logic is to compute the diff for each pair of (n, n+1) elements :
+            [1 2 4 5] --> [ 1 2 1 ]
+
+            If all diffs are same sign and between 1 and 3 then OK.
+
+            If not :
+
+            [1 2 7 3 4] --> [ 1 5 -4 1 ]
+
+            Add up the one in error (5) with one neighbour (here -4) :
+
+            [ 1 5 -4 1 ] --> [1 1 1] --> OK
+
+            If it's OK then all good (means 7 could be removed)
+
+            *(mine) adding the 5 and -4 to get a value in [1,3] shows that by
+            removing the 7, the distance between the 2 and 3 is an acceptable
+            level.
+            */
         }
     }
 
