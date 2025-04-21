@@ -1,2 +1,5 @@
 *:*Zone.Identifier
 .vscode
+.DS_Store
+*.dSYM
+build/
