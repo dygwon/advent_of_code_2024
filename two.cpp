@@ -15,10 +15,9 @@
 #include <sstream>
 #include <cmath>
 
-#define FILE "input/two.txt"
-
 using namespace std;
 
+const string FILE_TWO = "input/two.txt";
 const int MAX_DIFF = 3;
 const int MIN_DIFF = 1;
 
@@ -27,7 +26,7 @@ int check_safety(vector<int> levels);
 vector<int> vector_no_i(vector<int> v, int i);
 
 int main() {
-    vector<string> reports = read_lines(FILE);
+    vector<string> reports = read_lines(FILE_TWO);
     int part_one = 0;
     int part_two = 0;
 
